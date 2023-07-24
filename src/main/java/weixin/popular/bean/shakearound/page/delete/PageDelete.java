@@ -1,10 +1,10 @@
 /**
- * 
+ *
  */
 package weixin.popular.bean.shakearound.page.delete;
 
-import com.alibaba.fastjson.annotation.JSONField;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * 微信摇一摇周边－页面管理－删除页面－请求参数
@@ -13,26 +13,26 @@ import com.alibaba.fastjson.annotation.JSONField;
  */
 public class PageDelete {
 
-	/**
-	 * 指定页面的id<br>
-	 * 必填
-	 */
-	@JSONField(name = "page_id")
-	private Integer pageId;
+    /**
+     * 指定页面的id<br>
+     * 必填
+     */
+    @JsonProperty("page_id")
+    private Integer pageId;
 
-	/**
-	 * @return 指定页面的id
-	 */
-	public Integer getPageId() {
-		return pageId;
-	}
+    /**
+     * @return 指定页面的id
+     */
+    public Integer getPageId() {
+        return pageId;
+    }
 
-	/**
-	 * 指定页面的id<br>
-	 * 必填
-	 * @param pageId 页面的id
-	 */
-	public void setPageId(Integer pageId) {
-		this.pageId = pageId;
-	}
+    /**
+     * 指定页面的id<br>
+     * 必填
+     * @param pageId 页面的id
+     */
+    public void setPageId(Integer pageId) {
+        this.pageId = pageId;
+    }
 }

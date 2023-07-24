@@ -1,6 +1,6 @@
 package weixin.popular.bean.paymch;
 
-import com.alibaba.fastjson.annotation.JSONField;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MchPayApp {
 

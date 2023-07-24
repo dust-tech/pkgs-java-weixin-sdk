@@ -1,10 +1,10 @@
 package weixin.popular.bean.paymch;
 
+import weixin.popular.util.JsonUtil;
+
 import java.util.List;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
-
-import com.alibaba.fastjson.JSON;
 
 /**
  * 统一下单detail json 数据对象<br>
@@ -50,12 +50,12 @@ public class Detail {
 
 		@Override
 		public String marshal(Detail v) throws Exception {
-			return "<![CDATA[" + JSON.toJSONString(v) + "]]>";
+			return "<![CDATA[" + JsonUtil.toJSONString(v) + "]]>";
 		}
 
 		@Override
 		public Detail unmarshal(String v) throws Exception {
-			return JSON.parseObject(v, Detail.class);
+			return JsonUtil.parseObject(v, Detail.class);
 		}
 
 	}
